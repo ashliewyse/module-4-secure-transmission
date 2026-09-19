@@ -45,7 +45,7 @@ a changed plaintext hash, the wrong key, and a changed nonce.
 | Decryption | `decrypt_message()` uses the same secret key |
 | Compare hashes | `verify_integrity()` compares the recovered hash with the original |
 | Explain CIA and randomness | Sections below |
-| One-minute screen recording | Follow `RECORDING_GUIDE.md`; recording still needs to be made |
+| One-minute screen recording | Separate demonstration of input, encryption, decryption, and hash comparison |
 
 ## Confidentiality, integrity, and availability
 
@@ -81,21 +81,11 @@ This program generates a new key for each run and encrypts one message with it.
 The key and nonce are generated using cryptographically secure randomness,
 not Python's general-purpose `random` module.
 
-## Scope and remaining work
+## Scope
 
-This is a classroom demonstration of the encryption and hashing requirements.
+This application demonstrates the encryption and hashing workflow locally.
 It does not perform a network transfer, persist messages, exchange keys, or
-implement user accounts. The assignment introduction mentions login and roles,
-but its detailed instructions specify the encryption/hash workflow. Clarify
-that mismatch with the instructor if a separate rubric adds requirements.
-
-Before submitting:
-
-- Run the program and be able to explain each displayed step.
-- Review the README explanation and adjust it to reflect your understanding.
-- Make the required one-minute recording using `RECORDING_GUIDE.md`.
-- Make sure the instructor can access both the repository and recording.
-- Submit the links in Canvas. A GitHub commit does not submit the assignment.
+implement user accounts.
 
 ## Reference
 
