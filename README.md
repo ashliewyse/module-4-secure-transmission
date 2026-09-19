@@ -4,6 +4,14 @@ A small Python application that accepts a message, hashes it with SHA-256,
 encrypts it with AES-256-GCM, decrypts it, and compares the recovered message's
 hash with the original. The sender and receiver are simulated in one local run.
 
+## Video demonstration
+
+This repository includes the Python source code, this README explanation, and the recorded demonstration by Ashlie Wyse, attached to the GitHub release.
+
+**[Download and watch the video (MP4, 1 minute 39 seconds)](https://github.com/ashliewyse/module-4-secure-transmission/releases/download/midterm-demo/Recording.2026-09-18.205536.mp4)**
+
+The video shows message input, SHA-256 hashing, AES-GCM encryption, decryption, and the successful hash comparison. You can also find the recording under **Assets** on the [video release page](https://github.com/ashliewyse/module-4-secure-transmission/releases/tag/midterm-demo).
+
 ## Start here
 
 Open a terminal in this project folder. Python 3.11 or newer is recommended.
@@ -45,7 +53,7 @@ a changed plaintext hash, the wrong key, and a changed nonce.
 | Decryption | `decrypt_message()` uses the same secret key |
 | Compare hashes | `verify_integrity()` compares the recovered hash with the original |
 | Explain CIA and randomness | Sections below |
-| One-minute screen recording | Separate demonstration of input, encryption, decryption, and hash comparison |
+| Screen recording (at least one minute) | [Video demonstration](#video-demonstration), 1 minute 39 seconds |
 
 ## Confidentiality, integrity, and availability
 
